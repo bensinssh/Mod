@@ -256,7 +256,7 @@ def mentionMembers(to, mid,name,url,iconlink):
 def welcomeMembers(to, mid):
     try:
         arrData = ""
-        textx = "Total Member Masuk「{}」\nHaii  ".format(str(len(mid)))
+        textx = " ปฏิบัติตามกฎของกลุ่มด้ววย \nเข้าใจนะ  ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -267,7 +267,7 @@ def welcomeMembers(to, mid):
             elen = str(len(textx) + len(mention) - 1)
             arrData = {'S':slen, 'E':elen, 'M':i}
             arr.append(arrData)
-            textx += mention+wait["welcome"]+"\nNama grup : "+str(ginfo.name)
+            textx += mention+wait["welcome"]+"\ : "+str(ginfo.name)
             if no < len(mid):
                 no += 1
                 textx += "%i " % (num)
